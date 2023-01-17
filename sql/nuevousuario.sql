@@ -1,0 +1,3 @@
+ALTER SESSION SET "_oracle_script"=TRUE;
+CREATE USER liga IDENTIFIED BY liga;
+GRANT CONNECT, resource, DBA TO liga;
