@@ -30,7 +30,6 @@ CREATE TABLE tiendas (
 	nif varchar2(10),
 	nombre varchar2(20),
 	direccion varchar2(20),
-	
 	poblacion varchar2(20),
 	provincia varchar2(20),
 	codpostal number(5),
