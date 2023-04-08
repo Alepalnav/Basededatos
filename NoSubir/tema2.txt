@@ -1,0 +1,55 @@
+- modelo conceptual de datos(modelo entidad-relacion). son los planos
+- modelo logico. que necesito
+- modelo fisico. crear la casa o base de datos
+
+En la ud 3 vamos a ver el modelo conceptual de datos o entidad relacion.
+
+El modelo entidad- relacion es como crear unos planos para cerar una base de datos
+- creamos cajas para guardar información.(entidad)
+- hay una relacion entre las cajas que suele ser un verbo.
+
+Caracteristicas de E-R:
+- solo te dice los datos pero no te dice lo que hacer con ellos
+- es solo un diseño por tanto no atiende a espacio en base de datos ni nada.
+
+elementos:
+- entidad (cajas): se crea una entidad a todo lo que yo quiera guardar como informacion
+- atributos: son datos de la entidad .
+  - identificadores: identifica de manera unívoca la entidad
+  - descriptores: no lo identifican
+- relacion: es un verbo que relaciona las dos entidades. 
+  - grado de la relacion: unitarias, binarias, ternarias o n-arias.
+
+dos tipos de entidades:
+- entidades fuertes: tiene existencia por si misma y no dependen de otra
+- debil: su existencia depende de una fuerte
+
+como saber si es debil: 
+- existencia: siempre esta si es debil
+- identificacion: es debil em identificacion si necesita al padre para poder identificarse.
+si es debil si o si tiene que ser debil en existencia, pero no es necesario que lo sea 
+en identificacion.
+si no cumple la primera no cumple la segunda.
+
+Participaciones de una entidad en una relacion:
+ej: un profesor enseña como min a un alumno y como maximo a n alumnos (1,n) y un 
+alumno es enseñado como min por un prfesor y como maximo por un profesor (1,1)
+se coge el max de la primera y de la segunda 1:N , esto es la cardinalidad.
+
+atributos de una relacion:no pueden tener claves primarias
+ej; cuando se compra el producto
+
+es redundante si al eliminar un elemento no se pierde informacion
+ej: cuando tengo fecha de nacimiento y edad y quito la edad
+
+
+MODELO E/R EXTENDIDO:
+
+Aqui encontramos las relaciones jerarquicas, cuyos tipos son:
+Jerarquía exclusiva, se representa con un arco revertido de forma que define que algo es único.
+Jerarquía inclusiva, todo lo contrario a la exclusiva.
+
+Jerarquía total, todos los casos estan representados.
+Jerarquía parcial, hay mas casos pero no estan representados.
+
+

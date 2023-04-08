@@ -32,7 +32,7 @@ ORDER BY DEPT_NO DESC;
 
 SELECT *
 FROM EMPLE e 
-ORDER BY DEPT_NO DESC, APELLIDO DESC;
+ORDER BY DEPT_NO DESC, APELLIDO ASC;
 
 -- 8 Mostrar los datos de los empleados cuyo salario sea mayor que 2000000.
 
@@ -237,14 +237,20 @@ WHERE YEAR(FECHA_ALT)=1992;
 
 SELECT *
 FROM EMPLE e 
-WHERE MONTHNAME(FECHA_ALT) LIKE 'FEBRERO'; 
-#NO SE PUEDE PORQUE MONTHNAME NO VALE PARA LOS MESES EN NUMEROS
+WHERE MONTHNAME(FECHA_ALT) LIKE 'FEBRUARY'; 
+
 
 -- 38. Para cada empleado mostrar el apellido y el mayor valor del salario y la
 -- comisión que tienen.
 
-SELECT 
+SELECT APELLIDO, MAX(SALARIO), COMISION 
+FROM EMPLE e
+GROUP BY APELLIDO, COMISION;
 
+-- 39. Mostrar los datos de los empleados cuyo apellido empiece por 'A' y
+-- hayan sido contratados en el año 1990.
 
-
+SELECT APELLIDO 
+FROM EMPLE WHERE APELLIDO LIKE 'A%'
+AND YEAR()
 
